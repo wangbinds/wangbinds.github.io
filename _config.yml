@@ -41,3 +41,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# added by wangbin
+kramdown:
+  input: GFM

@@ -1,4 +1,4 @@
-logo: logo.bmp # add logo name
+logo: # add logo name
 title: 王斌 (凤朝凰)
 description: > # this means to ignore newlines until "baseurl:"
     这是我的个人博客网站，欢迎大家访问
@@ -13,7 +13,7 @@ banner-desc: # add banner description
 
 # Author settings
 author-pic: face.jpg # your photo
-author-name: 王斌 (凤朝凰) # your name
+author-name: 王斌 <span>(凤朝凰)</span> # your name
 about-author: # about author
 email: wangbinds@qq.com # your email
 phone: 18601028640 # your pnone number

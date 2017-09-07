@@ -56,8 +56,6 @@ repo通过manifest文件来管理所有相关的git库。所有的manifest文件
            remote="aosp"
            sync-j="4" />
 
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
-  <project path="kernel/common" name="kernel_common" groups="pdk-cw-fs,pdk-fs" />
   <project path="build/make" name="platform_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -67,58 +65,28 @@ repo通过manifest文件来管理所有相关的git库。所有的manifest文件
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" />
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" />
-  <project path="external/strace" name="platform_external_strace" groups="pdk-cw-fs,pdk-fs" />
-  <project path="dalvik" name="platform_dalvik" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/qemu" name="platform_external_qemu" />
-  <project path="external/libxml2" name="platform_external_libxml2" groups="pdk,pdk-cw-fs,pdk-fs,libxml2" />
-  <project path="kernel/msm" name="kernel_msm" />
-  <project path="development" name="platform_development" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/core" name="platform_system_core" groups="pdk" />
-  <project path="bionic" name="platform_bionic" groups="pdk" />
+
+  <!-- frameworks -->
   <project path="frameworks/support" name="platform_frameworks_support" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/fdlibm" name="platform_external_fdlibm" groups="pdk" />
-  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" />
+  <project path="frameworks/opt/com.google.android" name="platform_frameworks_opt_com.google.android" groups="pdk-fs" />
+  <project path="frameworks/policies/base" name="platform_frameworks_policies_base" groups="pdk-fs" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+
+  <!-- kernel -->
+  <project path="kernel/common" name="kernel_common" groups="pdk-cw-fs,pdk-fs" />
+  <project path="kernel/msm" name="kernel_msm" />
+
+  <!-- apps -->
+  <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" groups="pdk-fs" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" groups="pdk-fs" />
+  <project path="packages/apps/Calendar" name="platform_packages_apps_calendar" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="platform_packages_apps_Stk" groups="apps_stk,pdk-fs" />
-  <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" />
-  <project path="external/protobuf" name="platform_external_protobuf" groups="pdk" />
-  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_telephonyProvider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" />
-  <project path="external/ppp" name="platform_external_ppp" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/libpng" name="platform_external_libpng" groups="pdk" />
-  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_downloadprovider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Music" name="platform_packages_apps_music" groups="pdk-fs" />
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_mediaprovider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/jdiff" name="platform_external_jdiff" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/neven" name="platform_external_neven" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/iptables" name="platform_external_iptables" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/giflib" name="platform_external_giflib" groups="pdk,qcom_msm8x26" />
-  <project path="packages/providers/CalendarProvider" name="platform_packages_providers_calendarprovider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/calendar" name="platform_frameworks_opt_calendar" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/expat" name="platform_external_expat" groups="pdk" />
   <project path="packages/apps/SoundRecorder" name="platform_packages_apps_soundrecorder" groups="pdk-fs" />
-  <project path="external/sonivox" name="platform_external_sonivox" groups="pdk" />
-  <project path="external/apache-http" name="platform_external_apache-http" groups="pdk" />
-  <project path="external/freetype" name="platform_external_freetype" groups="pdk" />
-  <project path="external/tcpdump" name="platform_external_tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_packageinstaller" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/providers/ContactsProvider" name="platform_packages_providers_contactsprovider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform_packages_apps_htmlviewer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform_packages_apps_email" groups="pdk-fs" />
-  <project path="external/libpcap" name="platform_external_libpcap" groups="pdk,pdk-cw-fs,pdk-fs" />
-  <project path="external/tinyxml" name="platform_external_tinyxml" groups="pdk" />
-  <project path="external/elfutils" name="platform_external_elfutils" groups="pdk" />
-  <project path="external/elfcopy" name="platform_external_elfcopy" groups="pdk" />
-  <project path="external/zlib" name="platform_external_zlib" groups="pdk" />
-  <project path="external/sqlite" name="platform_external_sqlite" groups="pdk" />
-  <project path="external/netperf" name="platform_external_netperf" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Phone" name="platform_packages_apps_Phone" groups="pdk-fs" />
-  <project path="external/emma" name="platform_external_emma" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/tagsoup" name="platform_external_tagsoup" groups="pdk,pdk-cw-fs,pdk-fs" />
-  <project path="external/safe-iop" name="platform_external_safe-iop" groups="pdk" />
-  <project path="external/netcat" name="platform_external_netcat" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/esd" name="platform_external_esd" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Calculator" name="platform_packages_apps_calculator" groups="pdk-fs" />
   <project path="packages/apps/Mms" name="platform_packages_apps_mms" groups="pdk-fs" />
   <project path="packages/apps/VoiceDialer" name="platform_packages_apps_voicedialer" groups="pdk-fs" />
@@ -130,9 +98,57 @@ repo通过manifest文件来管理所有相关的git库。所有的manifest文件
   <project path="packages/apps/Launcher" name="platform_packages_apps_launcher" groups="pdk-fs" />
   <project path="packages/apps/Camera" name="platform_packages_apps_camera" groups="pdk-fs" />
   <project path="packages/apps/Sync" name="platform_packages_apps_sync" groups="pdk-fs" />
+
+  <!-- providers -->
+  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_telephonyProvider" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_downloadprovider" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_mediaprovider" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/providers/CalendarProvider" name="platform_packages_providers_calendarprovider" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/providers/ContactsProvider" name="platform_packages_providers_contactsprovider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/GoogleContactsProvider" name="platform_packages_providers_googlecontactsprovider" groups="pdk-fs" />
   <project path="packages/providers/drmprovider" name="platform_packages_providers_drmprovider" groups="pdk-fs" />
   <project path="packages/providers/ImProvider" name="platform_packages_providers_improvider" groups="pdk-fs" />
+
+  <!-- system -->
+  <project path="system/core" name="platform_system_core" groups="pdk" />
+  <project path="system/wlan/ti" name="platform_system_wlan_ti" groups="pdk-fs" />
+  <project path="system/bluetooth" name="platform_system_bluetooth" groups="pdk-fs" />
+
+  <project path="dalvik" name="platform_dalvik" groups="pdk-cw-fs,pdk-fs" />
+  <project path="bionic" name="platform_bionic" groups="pdk" />
+  <project path="development" name="platform_development" groups="pdk-cw-fs,pdk-fs" />
+  <project path="prebuilt" name="platform_prebuilt" groups="pdk-fs" />
+
+  <!-- external -->
+  <project path="external/strace" name="platform_external_strace" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/qemu" name="platform_external_qemu" />
+  <project path="external/libxml2" name="platform_external_libxml2" groups="pdk,pdk-cw-fs,pdk-fs,libxml2" />
+  <project path="external/fdlibm" name="platform_external_fdlibm" groups="pdk" />
+  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" />
+  <project path="external/protobuf" name="platform_external_protobuf" groups="pdk" />
+  <project path="external/ppp" name="platform_external_ppp" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/libpng" name="platform_external_libpng" groups="pdk" />
+  <project path="external/jdiff" name="platform_external_jdiff" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/neven" name="platform_external_neven" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/iptables" name="platform_external_iptables" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/giflib" name="platform_external_giflib" groups="pdk,qcom_msm8x26" />
+  <project path="external/expat" name="platform_external_expat" groups="pdk" />
+  <project path="external/sonivox" name="platform_external_sonivox" groups="pdk" />
+  <project path="external/apache-http" name="platform_external_apache-http" groups="pdk" />
+  <project path="external/freetype" name="platform_external_freetype" groups="pdk" />
+  <project path="external/tcpdump" name="platform_external_tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" />
+  <project path="external/libpcap" name="platform_external_libpcap" groups="pdk,pdk-cw-fs,pdk-fs" />
+  <project path="external/tinyxml" name="platform_external_tinyxml" groups="pdk" />
+  <project path="external/elfutils" name="platform_external_elfutils" groups="pdk" />
+  <project path="external/elfcopy" name="platform_external_elfcopy" groups="pdk" />
+  <project path="external/zlib" name="platform_external_zlib" groups="pdk" />
+  <project path="external/sqlite" name="platform_external_sqlite" groups="pdk" />
+  <project path="external/netperf" name="platform_external_netperf" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/emma" name="platform_external_emma" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/tagsoup" name="platform_external_tagsoup" groups="pdk,pdk-cw-fs,pdk-fs" />
+  <project path="external/safe-iop" name="platform_external_safe-iop" groups="pdk" />
+  <project path="external/netcat" name="platform_external_netcat" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/esd" name="platform_external_esd" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/srec" name="platform_external_srec" />
   <project path="external/yaffs2" name="platform_external_yaffs2" />
   <project path="external/jpeg" name="platform_external_jpeg" />
@@ -153,11 +169,10 @@ repo通过manifest文件来管理所有相关的git库。所有的manifest文件
   <project path="external/GoogleClient" name="platform_external_googleclient" />
   <project path="external/gdata" name="platform_external_gdata" />
   <project path="external/ping" name="platform_external_ping" />
-  <project path="prebuilt" name="platform_prebuilt" groups="pdk-fs" />
-  <project path="frameworks/opt/com.google.android" name="platform_frameworks_opt_com.google.android" groups="pdk-fs" />
-  <project path="frameworks/policies/base" name="platform_frameworks_policies_base" groups="pdk-fs" />
-  <project path="system/wlan/ti" name="platform_system_wlan_ti" groups="pdk-fs" />
-  <project path="system/bluetooth" name="platform_system_bluetooth" groups="pdk-fs" />
+
+  <!-- hardware -->
+  <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" />
 
 </manifest>
 ```

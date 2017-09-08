@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "我的第一篇文章"
-img: logo.bmp
+img: sweden.jpg
 date:   2017-08-28 18:54:05 +0800
 categories: test
 tag: test

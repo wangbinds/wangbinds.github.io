@@ -1,5 +1,5 @@
 logo: # add logo name
-title: 王斌 (凤朝凰)
+title: 凤朝凰
 description: > # this means to ignore newlines until "baseurl:"
     这是我的个人博客网站，欢迎大家访问
 permalink: ':title/'
@@ -13,7 +13,7 @@ banner-desc: 在浮躁的互联网浪潮中，做一个踏实的程序员。 # a
 
 # Author settings
 author-pic: face.jpg # your photo
-author-name: 王斌 <span>(凤朝凰)</span> # your name
+author-name: 凤朝凰 (王斌) # your name
 about-author: 举家北漂的一枚小小程序员，不辞辛劳要技术深钻。不为富贵，只为了最初的梦想和糊口的饭。 # about author
 about-work: 目前供职于HTC，在Android开发风风雨雨8年，从Framework做到Application，从C++做到Java。梦想有一天能够写出一个伟大的软件。 
 email: wangbinds@qq.com # your email
@@ -38,8 +38,8 @@ mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.
 analytics:
 
 # Paginate
-paginate: 12
-paginate_path: /page:num/
+# paginate: 12
+# paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown

@@ -63,7 +63,7 @@ tag: Android
 > * The notification has high priority and uses ringtones or vibrations on devices running Android 7.1 (API level 25) and lower.
 > * The notification channel has high importance on devices running Android 8.0 (API level 26) and higher
 
-==从这里可以知道，中文文档更新是有延迟的，以后还是尽可能查看英文文档才是。==
+**从这里可以知道，中文文档更新是有延迟的，以后还是尽可能查看英文文档才是。**
 
 最后放上Android Oreo激萌动画给大家欣赏：
-![Android Oreo](https://developer.android.com/about/versions/oreo/images/oreo-superhero.webm)
+![Android Oreo](../assets/img/oreo-superhero.webm)

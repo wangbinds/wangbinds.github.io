@@ -3522,6 +3522,7 @@ template {
   margin: 0;
 }
 
+/* deleted by wangbin for code block
 .highlighter-rouge {
   color: #e74b3c;
   font-weight: 400;
@@ -3530,6 +3531,7 @@ template {
           border-radius: 3px;
   padding: 0.1rem 0.5rem;
 }
+*/
 
 .highlight .hll {
   background-color: #ffc;
@@ -4910,4 +4912,26 @@ cite {
     padding: 0.8rem;
     font-size: 1.2rem;
   }
+}
+
+/* belows are added by wangbin */
+/* for set post images width to ensure
+ * image do not out of content bound*/
+p>img {
+    max-width: 100%;
+}
+
+/* for set code block background color
+ * and ensure codes do not out of bound*/
+.highlighter-rouge .highlight {
+    background: #eef;
+}
+
+.highlight {
+    margin-bottom: 15px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
 }

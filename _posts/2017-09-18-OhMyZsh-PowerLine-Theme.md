@@ -67,12 +67,12 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 $ git clone https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git
 ```
 
-3. 2. 创建一个符号链接将下载到的**powerline.zsh-theme**链接到**oh-my-zsh**的主题目录中。也可以通过直接运行下载到的安装脚本**install_in_omz.sh**来完成安装。
+2. 创建一个符号链接将下载到的**powerline.zsh-theme**链接到**oh-my-zsh**的主题目录中。也可以通过直接运行下载到的安装脚本**install_in_omz.sh**来完成安装。
 ```
 $ ./install_in_omz.sh
 ```
 
-4. 3. 在.zshrc文件中启用powerline主题
+3. 在.zshrc文件中启用powerline主题
 ```
 ZSH_THEME="powerline"
 ```

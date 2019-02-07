@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 在Windows 10上通过Linux子系统进行Android开发
-img: malaysia.jpg
-date: 2019-02-12 12:53:00 +0800
+img: malaysia.jpg # Add image post (optional)
+date: 2019-02-6 12:53:00 +0800
 description: 在Windows 10上安装Linux子系统, 并在Linux上配置Android开发环境, 实现在Windows上的Android开发
-tag: Android
+tag: [Android]
 ---
 
 

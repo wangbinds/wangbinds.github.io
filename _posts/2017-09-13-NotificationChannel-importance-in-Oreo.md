@@ -66,4 +66,4 @@ tag: Android
 **从这里可以知道，中文文档更新是有延迟的，以后还是尽可能查看英文文档才是。**
 
 最后放上Android Oreo激萌动画给大家欣赏：
-![Android Oreo](../assets/img/oreo-superhero.webm)
+<video src="../assets/img/oreo-superhero.webm" controls="controls" />

@@ -1,5 +1,6 @@
-#wangbinds.coding.me
+# wangbinds.github.io
 这个项目用于生成我的个人静态网站。
+目前部署在github pages上.
 
 [TOC]
 
